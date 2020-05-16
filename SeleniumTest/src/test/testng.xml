@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/Nancy/pccw_exercise"><classes/></test>
+    <test name="searchImageByURL" >
+        <parameter name = "url" value="https://lh3.googleusercontent.com/8ylYIIVMe8Cqg3YfgHGUUeaoRx5ywedifJi2uL2wrnaPoqtpz0b9U3NuM3lkTwBiwpLl=s85"/>
+        <classes>
+            <class name="GoogleImagePageTests">
+                <methods>
+                    <include name="searchImageByURL"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="searchByUpload">
+        <parameter name = "image" value="E://Nancy//pccw_exercise//test_image//images.png"/>
+        <parameter name = "count" value="3"/>
+        <classes>
+            <class name="GoogleImagePageTests">
+            <methods>
+                <include name="searchByUpload"></include>
+            </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+</suite>

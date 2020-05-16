@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="searchByUpload"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1257.336">
+  <properties />
+  
+  
+            <testcase name="searchByUpload" time="1257.336" classname="GoogleImagePageTests" />
+      
+</testsuite>
